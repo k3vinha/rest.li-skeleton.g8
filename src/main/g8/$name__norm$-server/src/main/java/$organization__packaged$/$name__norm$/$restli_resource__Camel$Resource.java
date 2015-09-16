@@ -1,4 +1,4 @@
-package $organization$.$name;format="norm"$.impl;
+package $organization$.$name;format="norm"$;
 
 import com.linkedin.restli.server.annotations.RestLiCollection;
 import com.linkedin.restli.server.resources.CollectionResourceTemplate;

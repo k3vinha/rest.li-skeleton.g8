@@ -10,7 +10,7 @@ buildscript {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '1.11'
+  gradleVersion = '2.6'
 }
 
 ext.spec = [
@@ -22,6 +22,7 @@ ext.spec = [
       'restliClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion,
       'restliServer' : 'com.linkedin.pegasus:restli-server:' + pegasusVersion,
       'restliTools' : 'com.linkedin.pegasus:restli-tools:' + pegasusVersion,
+      'r2Netty' : 'com.linkedin.pegasus:r2-netty:' + pegasusVersion,
       'gradlePlugins' : 'com.linkedin.pegasus:gradle-plugins:' + pegasusVersion
     ]
   ]
@@ -37,7 +38,7 @@ subprojects {
 
   afterEvaluate {
     if (project.plugins.hasPlugin('java')) {
-      sourceCompatibility = JavaVersion.VERSION_1_6
+      sourceCompatibility = JavaVersion.VERSION_1_8
     }
 
     // add the standard pegasus dependencies wherever the plugin is used

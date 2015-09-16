@@ -1,2 +1,3 @@
 include '$name;format="norm"$-api'
 include '$name;format="norm"$-server'
+include '$name;format="norm"$-client'

@@ -12,7 +12,7 @@
     <async-supported>true</async-supported>
     <init-param>
       <param-name>resourcePackages</param-name>
-      <param-value>$organization$.$name;format="norm"$.impl</param-value>
+      <param-value>$organization$.$name;format="norm"$</param-value>
     </init-param>
     <init-param>
       <param-name>parseqThreadPoolSize</param-name>
@@ -24,7 +24,7 @@
   <!-- servlet mappings -->
   <servlet-mapping>
     <servlet-name>$name;format="Camel"$Servlet</servlet-name>
-    <url-pattern>/$name;format="camel"$-server/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
 </web-app>
